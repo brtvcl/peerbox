@@ -1,9 +1,10 @@
 import React from "react";
 const App = () => {
+
+  console.log("hello webpack")
   return (
     <div>
-      <h1 className='heading__one'>React application!!!</h1>
-      <button>Btn</button>
+      <h1>Hello Tailwind</h1>
     </div>
   );
 };
