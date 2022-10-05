@@ -10,6 +10,7 @@ module.exports = {
 	output: {
 		path: path.join(__dirname, "/dist"),
 		filename: "bundle.[contenthash].js",
+		assetModuleFilename: "asset/[hash][ext][query]",
 		clean: true,
 	},
 	module: {
@@ -25,17 +26,21 @@ module.exports = {
 				test: /\.css$/i,
 				use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
 			},
+			{
+				test: /\.(png|jpg|gif|svg)$/i,
+				type: "asset/resource"
+			}
 		],
 	},
 	resolve: {
-		extensions: ['.js', '.jsx']
+		extensions: [".js", ".jsx"]
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: "./public/index.html"
 		}),
 		new MiniCssExtractPlugin({
-			filename:"style.[contenthash].css",
+			filename: "style.[contenthash].css",
 		})
 	],
 	devServer: {
