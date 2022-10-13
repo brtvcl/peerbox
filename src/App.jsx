@@ -19,6 +19,11 @@ import ConnectionOverlay from "./components/ConnectionOverlay";
 import ShareButton from "./components/ShareButton";
 import Icon from "./components/Icon";
 
+//import images
+import monkeyFace from "../public/img/monkey-face.png";
+import arrow1 from "../public/img/a1.png";
+import arrow2 from "../public/img/a2.png";
+
 // Globally unique prefix for peers. Required for peer ids to not collide with other peers in public peerjs cloud
 const peerIdPrefix = "rlKVIXgwhIaAyLTdmVbzq_";
 
@@ -501,11 +506,11 @@ const App = () => {
 				<h4 className="font-semibold mt-2 text-slate-400">Files</h4>
 				{showTutorial ?
 					<div className="hidden lg:block">
-						<img className="absolute -translate-x-full h-48 top-8 -left-8" src="/img/a1.png" alt="" srcset="" />
+						<img className="absolute -translate-x-full h-48 top-8 -left-8" src={arrow1} alt="" srcset="" />
 						<p className="absolute top-0 -left-64 font-bold text-2xl">1. Add files</p>
-						<img className="absolute translate-x-full h-48 -top-8 -right-8" src="/img/a2.png" alt="" srcset="" />
+						<img className="absolute translate-x-full h-48 -top-8 -right-8" src={arrow2} alt="" srcset="" />
 						<p className="absolute top-40 -right-96 font-bold text-2xl">2. Share it!</p>
-						<img className="absolute translate-x-full w-32 top-48 -right-64" src="/img/monkey-face.png" alt="" srcset="" />
+						<img className="absolute translate-x-full w-32 top-48 -right-64" src={monkeyFace} alt="" srcset="" />
 					</div> : <></>}
 				
 				<ul className="flex items-center px-4 pt-4 pb-2 rounded-xl border border-stone-200  flex-col mt-4">

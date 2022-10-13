@@ -25,7 +25,7 @@ npm run build
 
 ## Demo
 
-🌐 https://hmi-concept.netlify.app/
+🌐 https://peerbox.netlify.app/
 
 ## Tech
 
