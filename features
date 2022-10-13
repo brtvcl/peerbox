@@ -1,0 +1,23 @@
+add file
+    - add file to box
+
+delete file
+    - remove file from box
+
+download remote file
+    - show download progress 
+    - show uploading progress
+
+(admin) kick user,
+user leave
+    - remove every file of user from box
+    - remove user from box
+    - alert user that is kicked
+
+admin leave
+    - alert admin left
+    - go back to home page
+
+share
+    - by qr code
+    - with link
